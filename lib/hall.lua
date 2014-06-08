@@ -1,6 +1,6 @@
 
-Hall = {}
-Hall.new = function(token, title, picture_url)
+local Class = {}
+Class.new = function(token, title, picture_url)
   local this = {}
   this.token = token
   this.title = title
@@ -22,3 +22,5 @@ Hall.new = function(token, title, picture_url)
 
   return this
 end
+
+return Class
