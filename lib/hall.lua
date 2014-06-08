@@ -4,6 +4,11 @@ Class.new = function(token, title, picture_url)
   local this = {}
   this.token = token
   this.title = title
+  if picture_url:find("^https?://") == nil
+    picture_url =
+      "https://raw.github.com/chsh/webscript-scripts/master/images/"..
+      picture_url..".png"
+  end
   this.picture_url = picture_url
   this.post_url = 'https://hall.com/api/1/services/generic/'..token
 
