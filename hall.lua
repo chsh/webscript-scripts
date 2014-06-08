@@ -1,4 +1,4 @@
-
+-- lua module to post to Hall web messaging service.
 local Class = {}
 Class.new = function(token, title, picture_url)
   local this = {}
