@@ -6,6 +6,8 @@ Class.new = function(feed)
   this.each_entries = function(self, last_updated_at, processor)
     if last_updated_at == nil then
       last_updated_at = 0
+    else
+      last_updated_at = tonumber(last_updated_at)
     end
     local updated_entries = self:updated_entries(last_updated_at)
     if updated_entries == {} then
