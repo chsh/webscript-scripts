@@ -2,8 +2,7 @@
 local Hall = require 'chsh/webscript-scripts/lib/hall'
 local H = require 'chsh/webscript-scripts/lib/html'
 
-local hall = Hall.new('HALL-API-TOKEN-FOR-ROOM',
-                      'GitHub', 'octocat')
+local hall = Hall.new('HALL-API-TOKEN-FOR-ROOM', 'GitHub')
 
 -- describe responsible actions
 local event_actions = {

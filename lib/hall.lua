@@ -4,6 +4,9 @@ Class.new = function(token, title, picture_url)
   local this = {}
   this.token = token
   this.title = title
+  if picture_url == nil then
+    picture_url = title:lower()
+  end
   if picture_url:find("^https?://") == nil then
     picture_url =
       "https://raw.github.com/chsh/webscript-scripts/master/images/"..
