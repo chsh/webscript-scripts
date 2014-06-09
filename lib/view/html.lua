@@ -2,7 +2,7 @@
 
 
 local function link(text, url)
-  return '< a href="' .. url .. '">' .. text .. '</a>'
+  return '<a href="' .. url .. '">' .. text .. '</a>'
 end
 local function tag(tag, string)
   return '<' .. tag .. '>' .. string .. '</' .. tag .. '>'
